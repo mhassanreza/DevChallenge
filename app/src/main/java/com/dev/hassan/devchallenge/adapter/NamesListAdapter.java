@@ -34,8 +34,8 @@ public class NamesListAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     @Override
     public void onBindViewHolder(CustomViewHolder feedListRowHolder, int i) {
         NameModel feedItem = mArrFeedItemList.get(i);
-        feedListRowHolder.mTvFirstName.setText(getFirstLetterCapital(feedItem.getFirstName()));
-        feedListRowHolder.mTvLastName.setText(getFirstLetterCapital(feedItem.getLastName()) + ", ");
+        feedListRowHolder.mTvFirstName.setText(getFirstLetterCapital(feedItem.getFirstName().toString().trim()));
+        feedListRowHolder.mTvLastName.setText(getFirstLetterCapital(feedItem.getLastName()).toString().trim() + ", ");
     }
 
     private String getFirstLetterCapital(String value) {

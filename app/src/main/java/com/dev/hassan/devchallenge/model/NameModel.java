@@ -1,9 +1,11 @@
 package com.dev.hassan.devchallenge.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Hassan on 2/22/2016.
  */
-public class NameModel {
+public class NameModel implements Serializable {
     private String FirstName;
     private String LastName;
 

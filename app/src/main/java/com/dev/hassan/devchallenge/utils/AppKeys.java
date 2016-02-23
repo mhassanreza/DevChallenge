@@ -6,7 +6,7 @@ package com.dev.hassan.devchallenge.utils;
 
 public enum AppKeys {
 
-    FRAGMENT_DIALOG_TITLE("fragment_dialog_title");
+    FRAGMENT_DIALOG_TITLE("fragment_dialog_title"), SAVED_ARRAY_KEY("saved_array_key");
 
     /**
      * The _message_key.
